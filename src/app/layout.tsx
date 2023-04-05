@@ -51,7 +51,7 @@ export default function RootLayout({
 			lang="en"
 			className="bg-stone-950 text-stone-300"
 		>
-			<body className="mx-auto max-w-xl pt-10 md:pt-40">
+			<body className="mx-auto max-w-xl py-10 md:pt-40">
 				<SiteNav />
 				{children}
 				<SiteFooter />
