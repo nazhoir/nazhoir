@@ -1,42 +1,48 @@
-import Image from "next/image";
+"use client";
 
-import NavItems from "./nav-items";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function SiteNav() {
-	return (
-		<>
-			<div className="mb-10 flex space-x-4 px-6 md:px-0">
-				<div>
-					<Image
-						src={"/nazhoir.png"}
-						alt=""
-						width={64}
-						height={64}
-						className="h-16 w-16 overflow-hidden rounded-full bg-white grayscale"
-					/>
-				</div>
-				<div>
-					<h1 className="text-4xl font-bold">
-						Nazhoir
-					</h1>
-					<p>
-						Founder and CEO at{" "}
-						<span>
-							<a
-								className="group font-semibold text-sky-600 transition-all duration-300 ease-in-out"
-								href="https://diskresi.com"
-							>
-								<span className="bg-gradient-to-r from-sky-600 to-sky-600 bg-[length:0%_2px] bg-left-bottom bg-no-repeat pb-1 transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
-									{" "}
-									Diskresi{" "}
-								</span>
-							</a>
-						</span>
-					</p>
-				</div>
-			</div>
+	const pathname = usePathname();
 
-			<NavItems />
-		</>
+	return (
+		<nav className="sticky top-0 w-full px-6 py-2 backdrop-blur-xl md:px-0">
+			<ul className="flex w-fit space-x-1 font-semibold md:mx-0">
+				{navItems.map(({ label, href }, idx) => (
+					<li className="flex" key={idx}>
+						<Link
+							href={href}
+							className={`rounded-md px-3 py-2  duration-300 hover:bg-stone-900 hover:text-stone-300 ${
+								href === pathname
+									? "bg-stone-900 text-stone-300"
+									: "text-stone-500"
+							}`}
+						>
+							{label}
+						</Link>
+					</li>
+				))}
+			</ul>
+		</nav>
 	);
 }
+
+const navItems = [
+	{
+		label: "Home",
+		href: "/",
+	},
+	{
+		label: "About",
+		href: "/about",
+	},
+	{
+		label: "Blog",
+		href: "/blog",
+	},
+	{
+		label: "Projects",
+		href: "/projects",
+	},
+];
