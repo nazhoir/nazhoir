@@ -3,7 +3,7 @@ import "./globals.css";
 import SiteFooter from "@/components/site-footer";
 
 const title =
-	"Nazhoir | Writer, Proggrammer and Founder and CEO at Diskresi";
+	"Nazhoir | Writer, Proggrammer, Founder and CEO at Diskresi";
 const description =
 	"Driven programmer and writers taking on every challenge with gusto. Firmly believes that success is not just about the end result, but the journey itself. Ready for anything.";
 

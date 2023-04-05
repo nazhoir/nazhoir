@@ -18,7 +18,7 @@ export default function Home() {
 						Nazhoir
 					</h1>
 					<p>
-						Writer, Proggrammer and Founder and CEO at{" "}
+						Writer, Proggrammer, Founder and CEO at{" "}
 						<span>
 							<a
 								className="group font-semibold text-sky-600 transition-all duration-300 ease-in-out"
