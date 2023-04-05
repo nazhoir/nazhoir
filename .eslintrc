@@ -1,0 +1,11 @@
+{
+	"ignorePatterns": ["node_modules/", ".next/"],
+	"settings": {
+		"import/resolver": {
+			"alias": [
+				["@/", "./src"],
+				["@/", "./src"]
+			]
+		}
+	}
+}

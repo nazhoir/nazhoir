@@ -1,1 +1,0 @@
-## Hi 👋, I'm Nazhoir
