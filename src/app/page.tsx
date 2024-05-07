@@ -6,8 +6,8 @@ export default function Home() {
       <div className="mb-10 flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
         <div>
           <Image
-            src={"/nazhoir.png"}
-            alt=""
+            src={"https://avatars.githubusercontent.com/u/74437335?v=4"}
+            alt="Nazhoir"
             width={64}
             height={64}
             className="h-16 w-16 overflow-hidden rounded-full bg-white grayscale"

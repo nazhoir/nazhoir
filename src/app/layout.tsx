@@ -23,7 +23,7 @@ export const metadata = {
     siteId: "1072023881769136128",
     creator: "@nazhoir",
     creatorId: "1072023881769136128",
-    images: ["https://avatars.githubusercontent.com/u/74437335?v=4?s=400"],
+    images: ["https://avatars.githubusercontent.com/u/74437335?v=4&s=400"],
   },
   robots: {
     index: false,
